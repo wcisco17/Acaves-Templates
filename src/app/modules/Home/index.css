@@ -1,0 +1,16 @@
+.containers {
+    background: white;
+    padding: 28px;
+    color: gray;
+    border-radius: 10px;
+    width: 491px;
+    height: 240px;
+}
+
+.icons-carousel {
+    color: var(--main-bg-primaryPink);
+}
+
+.mission {
+    line-height: 2rem;
+}
