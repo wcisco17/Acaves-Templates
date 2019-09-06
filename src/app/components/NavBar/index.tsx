@@ -1,7 +1,7 @@
 import themes from 'app/assets/themes';
 import Headroom from "headroom.js";
 import React from 'react';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 import { Button, Col, Container, Nav, Navbar, NavbarBrand, NavItem, NavLink, Row, UncontrolledCollapse, UncontrolledTooltip } from "reactstrap";
 import logo from 'app/assets/img/icons/common/tung.png';
 
@@ -48,28 +48,40 @@ class Navigation extends React.Component<IPropsNavigation> {
                             </div>
                             <Nav className="navbar-nav-hover align-items-lg-center" navbar>
                                 <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
-                                    <span
-                                        className="nav-link-inner--text">Home</span>
+                                    <Link to='/' >
+                                        <span
+                                            style={{
+                                                color: themes.white
+                                            }}
+                                            className="nav-link-inner--text">Home</span>
+                                    </Link>
                                 </NavbarBrand>
                                 <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
-                                    <span
-                                        className="nav-link-inner--text">Who we are</span>
+                                    <Link to='/mission' >
+                                        <span
+                                            style={{
+                                                color: themes.white
+                                            }}
+                                            className="nav-link-inner--text">Who we are</span>
+                                    </Link>
                                 </NavbarBrand>
                             </Nav>
 
                             <Nav className="align-items-lg-center ml-lg-auto" navbar>
                                 <NavItem className="d-none mr-4 d-lg-block ml-lg-4">
-                                    <Button
-                                        onClick={() => ''}
-                                        style={{
-                                            backgroundColor: themes.primaryPink,
-                                            color: themes.white,
-                                            border: 'none'
-                                        }} >
-                                        <span className="nav-link-inner--text ml-1">
-                                            For Restaurants
+                                    <Link className='mr-4' to='/restaurant' >
+                                        <Button
+                                            onClick={() => ''}
+                                            style={{
+                                                backgroundColor: themes.primaryPink,
+                                                color: themes.white,
+                                                border: 'none'
+                                            }} >
+                                            <span className="nav-link-inner--text ml-1">
+                                                For Restaurants
                                         </span>
-                                    </Button>
+                                        </Button>
+                                    </Link>
                                     <Button
                                         style={{
                                             color: 'black',

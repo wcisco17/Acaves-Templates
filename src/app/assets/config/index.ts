@@ -5,5 +5,6 @@ export enum Images {
     MEET = 'meet.png',
     FRONT_APP = 'app-front.png',
     IPHONE = 'iPhone+X.png',
-    CHEF = 'chef-home.jpg'
+    CHEF = 'chef-home.jpg',
+    ABOUT_US = 'aboutus.png',
 }
