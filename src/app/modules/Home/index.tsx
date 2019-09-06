@@ -1,5 +1,6 @@
 import { AWS_PUB_IMAGE, Images } from 'app/assets/config';
 import themes from 'app/assets/themes';
+import Footer from 'app/components/Footer';
 import * as React from "react";
 import { useRef } from 'react';
 import { Button, Col, Container, Row } from "reactstrap";
@@ -8,10 +9,9 @@ import ContactUs from './ContactUs';
 import Features from './Features';
 import './index.css';
 import Restaurants from './Restaurants';
-import Footer from 'app/components/Footer';
 
 interface Props {
-    messages?: any;
+    // messages?: any;
 }
 
 /**
@@ -21,7 +21,7 @@ interface Props {
   for everyone regardless of gender affiliation or color.
  */
 
-export const Home = ({ messages }: Props) => {
+export const Home = () => {
     const messagesEndRef = useRef(null)
 
     // const scrollToBottom = () => {
@@ -52,7 +52,7 @@ export const Home = ({ messages }: Props) => {
                     </div>
                     <Container className="shape-container d-flex align-items-center py-lg">
                         <Row>
-                            <Col sm='7' >
+                            <Col sm='7'>
                                 <div className="containers">
                                     <p className="h1" >Building a community, one meal at a time</p>
                                     <div className="mt-3">
