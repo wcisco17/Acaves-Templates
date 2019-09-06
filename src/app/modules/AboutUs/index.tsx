@@ -6,6 +6,7 @@ import { Button, Col, Container, Row } from 'reactstrap';
 import './index.css';
 
 interface IProps { };
+const zinny = 'https://scontent.fbkk12-3.fna.fbcdn.net/v/t1.0-9/57390110_1188994947945268_785395024169795584_n.jpg?_nc_cat=102&_nc_oc=AQnLnFE03c-0RVoULNjj92aXcjmZRou9f8jjvfY1JupFwaPo7w0nMf4k77j-3ffaOIA&_nc_ht=scontent.fbkk12-3.fna&oh=35e2106733dd6b53c18f1605e0c73d69&oe=5DC8FD4C';
 
 const Mission: React.FC<IProps> = () => {
     return (
@@ -93,7 +94,7 @@ const Mission: React.FC<IProps> = () => {
                                     <div className="pt-4 text-center">
                                         <h5 className="title">
                                             <span className="d-block mb-1">Williams Sissoko</span>
-                                            <small className="h6 text-muted">Founder and CEO</small>
+                                            <small className="h6 text-muted">Founder | CEO</small>
                                         </h5>
                                         <div className="mt-3">
                                             <Button
@@ -136,7 +137,7 @@ const Mission: React.FC<IProps> = () => {
                                         <h5 className="title">
                                             <span className="d-block mb-1">Jade Pookongchana</span>
                                             <small className="h6 text-muted">
-                                               Co-COO Co-Founder
+                                                COO | Co-Founder
                                             </small>
                                         </h5>
                                         <div className="mt-3">
@@ -253,18 +254,19 @@ const Mission: React.FC<IProps> = () => {
                                     </div>
                                 </div>
                             </Col>
+
                             <Col className="my-5 mb-lg-0" lg="3" md="6">
                                 <div className="px-4">
                                     <img
                                         alt="..."
                                         className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                                        src={require("app/assets/img/icons/common/liam.png")}
+                                        src={zinny}
                                         style={{ width: "200px" }}
                                     />
                                     <div className="pt-4 text-center">
                                         <h5 className="title">
-                                            <span className="d-block mb-1">Liam Esparza</span>
-                                            <small className="h6 text-muted">Risk & Management</small>
+                                            <span className="d-block mb-1">Zinny Olivier</span>
+                                            <small className="h6 text-muted">Co-Founder | Product</small>
                                         </h5>
                                         <div className="mt-3">
                                             <Button

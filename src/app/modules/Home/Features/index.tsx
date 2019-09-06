@@ -1,17 +1,17 @@
 import HomeTabs from 'app/components/HomeTabs';
 import * as React from 'react';
 import { Fragment } from 'react';
-import { Container, Row } from 'reactstrap';
 import Bounce from 'react-reveal/Bounce';
+import { Container, Row } from 'reactstrap';
 
 interface IProps {
     messagesEndRef: any
 };
 
-const Features: React.FC<IProps> = () => {
+const Features: React.FC<IProps> = ({ messagesEndRef }) => {
     return (
         <Fragment>
-            <section className="section section-lg">
+            <section ref={messagesEndRef} className="section section-lg">
                 <Container>
                     <Row className="row-grid align-items-center">
                         <Bounce left>

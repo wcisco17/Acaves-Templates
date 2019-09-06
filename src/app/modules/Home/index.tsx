@@ -2,7 +2,7 @@ import { AWS_PUB_IMAGE, Images } from 'app/assets/config';
 import themes from 'app/assets/themes';
 import Footer from 'app/components/Footer';
 import * as React from "react";
-import { useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { Button, Col, Container, Row } from "reactstrap";
 import Carousel from './Carousel';
 import ContactUs from './ContactUs';
@@ -11,23 +11,17 @@ import './index.css';
 import Restaurants from './Restaurants';
 
 interface Props {
-    // messages?: any;
+    messages?: any;
 }
 
-/**
- * 
- * TungTied's mission is not only about food, our aim is to uplift communties by using food as the ice breaker,
-  fight the gap for inequality in Asia, reduce polution, and create an open minded space
-  for everyone regardless of gender affiliation or color.
- */
-
-export const Home = () => {
+export const Home: React.FC<Props> = ({ messages }) => {
     const messagesEndRef = useRef(null)
 
-    // const scrollToBottom = () => {
-    //     messagesEndRef.current.scrollIntoView({ behavior: "smooth" })
-    // }
-    // useEffect(scrollToBottom, [messages]);
+    const scrollToBottom = () => {
+        messagesEndRef.current.scrollIntoView({ behavior: "smooth" })
+    }
+    useEffect(() => scrollToBottom, [messages]);
+
     return (
         <>
             <div className="position-relative">
@@ -57,7 +51,7 @@ export const Home = () => {
                                     <p className="h1" >Building a community, one meal at a time</p>
                                     <div className="mt-3">
                                         <Button
-                                            onClick={() => 'scrollToBottom'}
+                                            onClick={() => scrollToBottom()}
                                             style={{
                                                 backgroundColor: themes.primaryPink,
                                                 color: themes.white,

@@ -1,11 +1,11 @@
-import * as React from 'react'
+import * as React from 'react';
 
-interface IProps {};
+interface IProps { };
 
 const Restaurant: React.FC<IProps> = () => {
     return (
-        <div>   
-            Restaurant
+        <div>
+            Restaurant Page
         </div>
     )
 }
