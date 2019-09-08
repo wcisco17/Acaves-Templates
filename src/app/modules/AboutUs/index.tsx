@@ -266,7 +266,7 @@ const Mission: React.FC<IProps> = () => {
                                     <div className="pt-4 text-center">
                                         <h5 className="title">
                                             <span className="d-block mb-1">Zinny Olivier</span>
-                                            <small className="h6 text-muted">Co-Founder | Product</small>
+                                            <small className="h6 text-muted">Product</small>
                                         </h5>
                                         <div className="mt-3">
                                             <Button
