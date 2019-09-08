@@ -3,7 +3,6 @@ import classnames from "classnames";
 import React from 'react';
 import { Card, CardBody, Col, Nav, NavItem, NavLink, TabContent, TabPane } from "reactstrap";
 
-
 const HomeTabs = () => {
     const [tabs, setTabs] = React.useState<number>(1);
 
