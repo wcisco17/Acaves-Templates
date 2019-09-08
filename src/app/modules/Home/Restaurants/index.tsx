@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, CardBody, Col, Container, Row } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 const uri = 'https://images.unsplash.com/photo-1519288997835-7ae47de1b588?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80';
 
@@ -12,7 +13,7 @@ const Restaurants = () => {
                         <Col className="order-lg-2 ml-lg-auto" md="6">
                             <div className="position-relative pl-md-5">
                                 <img
-                                    alt={uri.slice(5,9)}
+                                    alt={uri.slice(5, 9)}
                                     className="img-center img-fluid"
                                     style={{
                                         borderRadius: 10
@@ -28,7 +29,7 @@ const Restaurants = () => {
                                     <p className="text-white">
                                         Focus on your craft, let us worry about the customers. We work with selected restaurants in ways to monitize their platform, an end to end customer suppport that is constantly for their needs.
                                 <br />
-                                <br />
+                                        <br />
                                         <p>
                                             <strong>Our mission is to create long lasting partnerships.</strong>
                                         </p>
@@ -50,13 +51,16 @@ const Restaurants = () => {
                                             <p>
                                                 We suppport restaurants on our app by providing ways to scale to a wider audience, create events, and keep track of those loyal customers.
                       </p>
-                                            <a
-                                                className="text-success"
-                                                href="#pablo"
-                                                onClick={e => e.preventDefault()}
-                                            >
-                                                Learn more
+                                            <Link to='/restaurant'>
+
+                                                <a
+                                                    className="text-success"
+                                                    href="#pablo"
+                                                    onClick={e => e.preventDefault}
+                                                >
+                                                    Learn more
                       </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </CardBody>

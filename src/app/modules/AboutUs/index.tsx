@@ -52,7 +52,6 @@ const Mission: React.FC<IProps> = () => {
                                 </p>
                                 </div>
                             </Col>
-
                         </Row>
                     </Container>
                 </section>
@@ -300,35 +299,6 @@ const Mission: React.FC<IProps> = () => {
                         </Row>
                     </Container>
                 </section>
-                {/* <div className="position-relative">
-                    <section className="mb-5 section section-lg section-hero section-shaped">
-                        <div className="shape shape-style-1" style={{
-                            background: `url('https://images.unsplash.com/photo-1553484771-4e29a68540f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1144&q=80')`,
-                            backgroundPosition: 'center',
-                            backgroundSize: 'cover',
-                        }} >
-                            <div className="dark">
-                                <span className="span-150" />
-                                <span className="span-50" />
-                                <span className="span-50" />
-                                <span className="span-75" />
-                                <span className="span-100" />
-                                <span className="span-75" />
-                                <span className="span-50" />
-                                <span className="span-100" />
-                                <span className="span-50" />
-                                <span className="span-100" />
-                            </div>
-                        </div>
-                        <Container>
-                            <Row>
-                                <Col>
-                                    <p>Founders</p>
-                                </Col>
-                            </Row>
-                        </Container>
-                    </section>
-                </div> */}
             </div>
 
             <Footer />
