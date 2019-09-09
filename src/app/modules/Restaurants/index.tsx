@@ -6,14 +6,14 @@ import TextLoop from "react-text-loop";
 import { Badge, Button, Card, CardBody, Col, Container, Row } from 'reactstrap';
 import Content from './Content';
 import ExampleDashboard from './ExampleDashboard';
-
+import './index.css';
 interface IProps { };
 
 const Restaurant: React.FC<IProps> = () => {
     return (
         <>
             <div className="position-relative">
-                <section className="section section-lg section-hero section-shaped">
+                <section className="section restaurant section-lg section-hero section-shaped">
                     <div className="shape shape-style-1" style={{
                         background: `url(${chef})`,
                         backgroundSize: 'cover',
@@ -32,22 +32,20 @@ const Restaurant: React.FC<IProps> = () => {
                             <span className="span-100" />
                         </div>
                     </div>
-                    <Container>
+                    <Container className='tainer' >
                         <Row>
                             <Col sm='7'>
                                 <div className="wrappers-mission">
                                     <p style={{
-                                        fontSize: '3.2rem',
-                                    }} className="h1 text-white">
+                                    }} className="h1 rest-header text-white">
                                         <strong>
-                                            Curated For Restaurants
+                                            For restaurants
                                     </strong>
                                     </p>
                                     <p style={{
                                         position: 'absolute',
                                         top: '50px',
-                                        fontSize: '26px'
-                                    }} className="lead text-white">
+                                    }} className="lead rest-customer text-white">
                                         Let us worry about your {" "}
                                         <TextLoop interval={1000} >{" "}
                                             <span style={{ fontWeight: "bold" }} >Customers</span>
@@ -107,7 +105,7 @@ const Restaurant: React.FC<IProps> = () => {
                                                 <i className="ni ni-istanbul" />
                                             </div>
                                             <h6 className="text-success text-uppercase">
-                                                Scaleble business
+                                            scalable business
                                         </h6>
                                             <p className="description mt-3">
                                                 TungTied can help your business scale and target that specific audience your looking

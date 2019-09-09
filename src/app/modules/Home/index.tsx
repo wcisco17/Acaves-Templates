@@ -24,6 +24,7 @@ export const Home: React.FC<Props> = ({ messages }) => {
 
     return (
         <>
+        <div className="home-container">
             <div className="position-relative">
                 <section className="section section-lg section-hero section-shaped">
                     <div className="shape shape-style-1" style={{
@@ -90,6 +91,7 @@ export const Home: React.FC<Props> = ({ messages }) => {
             <ContactUs />
             <div style={{ marginBottom: 60 }} />
             <Footer />
+            </div>
         </>
     );
 }

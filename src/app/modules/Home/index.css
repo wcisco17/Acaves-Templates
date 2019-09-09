@@ -4,7 +4,11 @@
     color: gray;
     border-radius: 10px;
     width: 491px;
-    height: 240px;
+    height: 220px;
+}
+
+.containers p {
+    font-size: 2rem;
 }
 
 .icons-carousel {
@@ -13,4 +17,46 @@
 
 .mission {
     line-height: 2rem;
+}
+
+@media screen and (max-width: 770px) {
+    .home-container {
+        overflow: hidden;
+    }
+    .home__container-1 {
+        flex-direction: column !important;
+    }
+    .featured-iphone {
+        width: 39%;
+        margin: 0 auto;
+        display: block;
+        padding-bottom: 2rem;
+    }
+    .featured-nav {
+        display: block;
+        margin: 0 auto;
+    }
+    .featured-header {
+        text-align: center;
+    }
+    .containers {
+        width: 350px;
+        height: 200px;
+    }
+    .containers p {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .containers {
+        width: 260px;
+        height: 180px;
+    }
+    .containers p {
+        font-size: 1.30rem;
+    }
+    .mission {
+        display: none
+    }
 }

@@ -2,4 +2,18 @@
     --main-bg-primaryPink: #FF54A6;
     --main-bg-primaryYellow: #FFF500;
     --main-bg-primaryGreen: #0FD9A3;
+    --WIDTH_IPAD: 768px;
+}
+
+.link-navbar {
+    color: white;
+}
+
+@media screen and (max-width: 990px) {
+    .link-navbar {
+        color: black;
+    }
+    .activate {
+        padding-top: 0.5rem;
+    }
 }

@@ -1,1 +1,31 @@
-.content {}
+.rest-header {
+    font-size: 3rem;
+}
+
+.rest-customer {
+    font-size: 26px;
+}
+
+@media screen and (max-width: 770px) {
+    .restaurant {
+        height: 450px;
+    }
+    .restaurant-content {
+        margin-bottom: 5rem;
+    }
+    .rest-header {
+        font-size: 2rem;
+    }
+    .rest-customer {
+        font-size: 20px;
+    }
+    .content-button {
+        padding-top: 3rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .tainer {
+        padding: 5px 32px;
+    }
+}
