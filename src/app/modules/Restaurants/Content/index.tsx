@@ -6,7 +6,7 @@ const uri = 'https://images.unsplash.com/photo-1507914464562-6ff4ac29692f?ixlib=
 const Content: React.FC = () => {
   return (
     <React.Fragment>
-         <div className="position-relative">
+         <div className="position-relative restaurant-content">
                         <section className="section section-lg section-hero section-shaped">
                             <div className="shape shape-style-1" style={{
                                 background: `url(${uri})`,

@@ -47,22 +47,17 @@ class Navigation extends React.Component<IPropsNavigation> {
                                 </Row>
                             </div>
                             <Nav className="navbar-nav-hover align-items-lg-center" navbar>
-                                <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+                                <NavbarBrand>
                                     <Link to='/' >
                                         <span
-                                            style={{
-                                                color: themes.white
-                                            }}
-                                            className="nav-link-inner--text">Home</span>
+                                            className="nav-link-inner--text link-navbar">Home</span>
                                     </Link>
                                 </NavbarBrand>
-                                <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+                                <div className='activate' />
+                                <NavbarBrand>
                                     <Link to='/mission' >
                                         <span
-                                            style={{
-                                                color: themes.white
-                                            }}
-                                            className="nav-link-inner--text">Who we are</span>
+                                            className="nav-link-inner--text link-navbar">Who we are</span>
                                     </Link>
                                 </NavbarBrand>
                             </Nav>

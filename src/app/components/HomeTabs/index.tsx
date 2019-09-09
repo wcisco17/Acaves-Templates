@@ -13,7 +13,7 @@ const HomeTabs = () => {
 
     return (
         <>
-            <div className="nav-wrapper">
+            <div className="nav-wrapper featured-nav">
                 <Nav
                     className="nav-fill flex-column flex-md-row"
                     id="tabs-icons-text"
@@ -69,11 +69,11 @@ const HomeTabs = () => {
                     <TabContent activeTab={"tabs" + tabs}>
 
                         <TabPane tabId="tabs1">
-                            <div className="d-flex mx-5 ">
+                            <div className="home__container-1 d-flex mx-5 ">
                                 <Col className="order-md-1" md="6">
                                     <img
                                         alt="..."
-                                        className="img-fluid floating"
+                                        className="img-fluid floating featured-iphone"
                                         style={{
                                             width: '50%',
                                         }}
@@ -95,11 +95,11 @@ const HomeTabs = () => {
 
 
                         <TabPane tabId="tabs2">
-                            <div className="d-flex mx-5 ">
+                            <div className="home__container-1 d-flex mx-5 ">
                                 <Col className="order-md-1" md="6">
                                     <img
                                         alt="..."
-                                        className="img-fluid floating"
+                                        className="img-fluid floating featured-iphone"
                                         style={{
                                             width: '50%',
                                         }}
@@ -120,11 +120,11 @@ const HomeTabs = () => {
                         </TabPane>
 
                         <TabPane tabId="tabs3">
-                            <div className="d-flex mx-5 ">
+                            <div className="home__container-1 d-flex mx-5 ">
                                 <Col className="order-md-1" md="6">
                                     <img
                                         alt="..."
-                                        className="img-fluid floating"
+                                        className="img-fluid floating featured-iphone"
                                         style={{
                                             width: '50%',
                                         }}
@@ -134,7 +134,7 @@ const HomeTabs = () => {
                                 <Col className="d-flex align-items-center order-md-3" md="6">
                                     <div className="pr-md-5">
                                         <p className="h5 mb-3">Meet with people</p>
-                                        <p className='mission' >
+                                        <p className='mission missions' >
                                             TungTied's mission is not only about food, our aim is to uplift communties by using food as the ice breaker,
                                              fight the gap for inequality in Asia, reduce polution, and create an open minded space
                                             for everyone regardless of gender affiliation or color.

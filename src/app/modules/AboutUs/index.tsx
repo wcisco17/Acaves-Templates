@@ -12,7 +12,7 @@ const Mission: React.FC<IProps> = () => {
     return (
         <Fragment>
             <div className="position-relative">
-                <section className="section section-lg section-hero section-shaped">
+                <section className="section aboutUs section-lg section-hero section-shaped">
                     <div className="shape shape-style-1" style={{
                         background: `url(${AWS_PUB_IMAGE}${Images.ABOUT_US})`,
                         backgroundPosition: 'center',
@@ -35,9 +35,7 @@ const Mission: React.FC<IProps> = () => {
                         <Row>
                             <Col sm='7'>
                                 <div className="wrappers-mission">
-                                    <p style={{
-                                        fontSize: '3.2rem',
-                                    }} className="h1 text-white">
+                                    <p className="abouus-mission h1 text-white">
                                         <strong>
                                             Our Mission
                                     </strong>
@@ -45,8 +43,7 @@ const Mission: React.FC<IProps> = () => {
                                     <p style={{
                                         position: 'absolute',
                                         top: '50px',
-                                        fontSize: '26px'
-                                    }} className="lead text-white">
+                                    }} className="commited lead text-white">
                                         We're commited to provide you with a seemlest experience based on your
                                         favorite food interest, connecting you with events and people near you.
                                 </p>

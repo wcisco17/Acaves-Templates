@@ -8,4 +8,6 @@ export default {
     facColor: '#3B5998',
     white: '#FFFFFF',
     blue: '#0066FF',
+    width: {
+    }
 };

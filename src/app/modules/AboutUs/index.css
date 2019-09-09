@@ -16,6 +16,31 @@
     top: 70px;
 }
 
+.abouus-mission {
+    font-size: 3.2rem;
+}
+
+.commited {
+    font-size: 26px;
+}
+
 .divider-1 {
     margin: 0 130px;
 }
+
+@media screen and (max-width: 770px) {
+    .aboutUs {
+        height: 450px;
+    }
+    .wrappers-mission {}
+    .abouus-mission {
+        padding-left: 30px;
+        font-size: 2rem;
+    }
+    .commited {
+        padding: 0 30px;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 400px) {}
