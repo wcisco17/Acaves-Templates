@@ -76,7 +76,7 @@ class Navigation extends React.Component<IPropsNavigation> {
 
                             <Nav className="align-items-lg-center ml-lg-auto" navbar>
                                 <NavItem className="d-none mr-4 d-lg-block ml-lg-4">
-                                    <Link className='mr-4' to='/restaurant' >
+                                    <Link className='mr-4' to='/owner' >
                                         <Button
                                             onClick={() => ''}
                                             style={{

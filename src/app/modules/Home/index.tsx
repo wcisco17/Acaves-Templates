@@ -10,7 +10,7 @@ import { Button, Col, Container, Row } from 'reactstrap';
 import Carousel from './Carousel';
 import ContactUs from './ContactUs';
 import Features from './Features';
-import Restaurants from './Restaurants';
+import Owner from './Owner';
 
 interface Props {
     messages?: any;
@@ -90,7 +90,7 @@ export const Home: React.FC<Props> = ({ messages }) => {
                 </div>
                 <Carousel />
                 <Features messagesEndRef={messagesEndRef} />
-                <Restaurants />
+                <Owner />
                 <ContactUs />
                 <div style={{ marginBottom: 60 }} />
                 <Footer />

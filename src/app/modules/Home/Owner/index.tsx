@@ -50,7 +50,7 @@ const Restaurants = () => {
                                             <p>
                                                 We suppport restaurants on our app by providing ways to scale to a wider audience, create events, and keep track of those loyal customers.
                       </p>
-                                            <Link to='/restaurant'>
+                                            <Link to='/owner'>
 
                                                 <a
                                                     className="text-success"
