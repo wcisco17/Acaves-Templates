@@ -1,23 +1,22 @@
-import * as React from 'react'
-import { Container, Row, Col, Badge, UncontrolledCarousel } from 'reactstrap';
 import dash from 'app/assets/img/icons/common/dashboard.png';
-import social from 'app/assets/img/icons/common/social.png';
 import metrics from 'app/assets/img/icons/common/metrics.png';
+import social from 'app/assets/img/icons/common/social.png';
+import * as React from 'react';
+import { Badge, Col, Container, Row, UncontrolledCarousel } from 'reactstrap';
 
 const ExampleDashboard = () => {
     return (
         <section className="section section-lg">
             <Container className="py-md">
-            <Row className="justify-content-between align-items-center">
+                <Row className="justify-content-between align-items-center">
                     <Col className="mb-4 mb-lg-0" lg="5">
                         <div className="pr-md-5">
                             <div className="icon icon-lg icon-shape icon-shape-success shadow rounded-circle mb-5">
                                 <i className="ni ni-settings-gear-65" />
                             </div>
-                            <h3>TungTied Solutions</h3>
+                            <h3>Acave Solutions</h3>
                             <p>
-                                The dashboard comes with metrics, stats, to keep track of your bookings.
-                                Get ready to create events, send out special invtations.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam molestiae, quo odio animi, beatae ut optio repellendus porro, ab cum facilis obcaecati fugiat cupiditate incidunt quasi perferendis aut itaque. Quae!
                 </p>
                             <ul className="list-unstyled mt-5">
                                 <li className="py-2">
@@ -32,7 +31,7 @@ const ExampleDashboard = () => {
                                         </div>
                                         <div>
                                             <h6 className="mb-0">
-                                                Stats on your customers
+                                                Stats curated for you
                         </h6>
                                         </div>
                                     </div>

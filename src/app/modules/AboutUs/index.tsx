@@ -1,12 +1,13 @@
-import { AWS_PUB_IMAGE, Images } from 'app/assets/config';
+import './index.css';
+
+import { team } from 'app/assets/config';
+import mission from 'app/assets/img/icons/common/pic04.jpg';
 import Footer from 'app/components/Footer';
 import * as React from 'react';
 import { Fragment } from 'react';
 import { Button, Col, Container, Row } from 'reactstrap';
-import './index.css';
 
 interface IProps { };
-const zinny = 'https://scontent.fbkk12-3.fna.fbcdn.net/v/t1.0-9/57390110_1188994947945268_785395024169795584_n.jpg?_nc_cat=102&_nc_oc=AQnLnFE03c-0RVoULNjj92aXcjmZRou9f8jjvfY1JupFwaPo7w0nMf4k77j-3ffaOIA&_nc_ht=scontent.fbkk12-3.fna&oh=35e2106733dd6b53c18f1605e0c73d69&oe=5DC8FD4C';
 
 const Mission: React.FC<IProps> = () => {
     return (
@@ -14,7 +15,7 @@ const Mission: React.FC<IProps> = () => {
             <div className="position-relative">
                 <section className="section aboutUs section-lg section-hero section-shaped">
                     <div className="shape shape-style-1" style={{
-                        background: `url(${AWS_PUB_IMAGE}${Images.ABOUT_US})`,
+                        background: `url(${mission})`,
                         backgroundPosition: 'center',
                         backgroundSize: 'cover'
                     }} >
@@ -44,8 +45,7 @@ const Mission: React.FC<IProps> = () => {
                                         position: 'absolute',
                                         top: '50px',
                                     }} className="commited lead text-white">
-                                        We're commited to provide you with a seemlest experience based on your
-                                        favorite food interest, connecting you with events and people near you.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias magni nam error corporis blanditiis similique ratione obcaecati.
                                 </p>
                                 </div>
                             </Col>
@@ -60,7 +60,7 @@ const Mission: React.FC<IProps> = () => {
                                 Our Story
                         </h1>
                             <p className="lead">
-                                We started in 2019, and TungTied's mission is not only about food, our aim is to uplift communties by using food as the ice breaker, fight the gap for inequality in Asia, reduce polution, and create an open minded space for everyone regardless of gender affiliation or color.
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum ipsa dignissimos facilis repudiandae necessitatibus porro, rerum ratione commodi. Expedita quae, nostrum nesciunt assumenda voluptate adipisci quis provident ex iure corrupti!
                         </p>
                         </Col>
                     </Row>
@@ -79,220 +79,58 @@ const Mission: React.FC<IProps> = () => {
                             </Col>
                         </Row>
                         <Row>
-                            <Col className="mb-5 mb-lg-0" lg="3" md="6">
-                                <div className="px-4">
-                                    <img
-                                        alt="..."
-                                        className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                                        src={require('app/assets/img/icons/common/will.png')}
-                                        style={{ width: "200px" }}
-                                    />
-                                    <div className="pt-4 text-center">
-                                        <h5 className="title">
-                                            <span className="d-block mb-1">Williams Sissoko</span>
-                                            <small className="h6 text-muted">Founder | CEO</small>
-                                        </h5>
-                                        <div className="mt-3">
-                                            <Button
-                                                className="btn-icon-only rounded-circle"
-                                                color="warning"
-                                                href="#pablo"
-                                                onClick={e => e.preventDefault()}
-                                            >
-                                                <i className="fa fa-twitter" />
-                                            </Button>
-                                            <Button
-                                                className="btn-icon-only rounded-circle ml-1"
-                                                color="warning"
-                                                href="#pablo"
-                                                onClick={e => e.preventDefault()}
-                                            >
-                                                <i className="fa fa-facebook" />
-                                            </Button>
-                                            <Button
-                                                className="btn-icon-only rounded-circle ml-1"
-                                                color="warning"
-                                                href="#pablo"
-                                                onClick={e => e.preventDefault()}
-                                            >
-                                                <i className="fa fa-dribbble" />
-                                            </Button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </Col>
-                            <Col className="mb-5 mb-lg-0" lg="3" md="6">
-                                <div className="px-4">
-                                    <img
-                                        alt="..."
-                                        className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                                        src={require("app/assets/img/icons/common/jade.jpg")}
-                                        style={{ width: "200px" }}
-                                    />
-                                    <div className="pt-4 text-center">
-                                        <h5 className="title">
-                                            <span className="d-block mb-1">Jade Pookongchana</span>
-                                            <small className="h6 text-muted">
-                                                COO | Co-Founder
-                                            </small>
-                                        </h5>
-                                        <div className="mt-3">
-                                            <Button
-                                                className="btn-icon-only rounded-circle"
-                                                color="primary"
-                                                href="#pablo"
-                                                onClick={e => e.preventDefault()}
-                                            >
-                                                <i className="fa fa-twitter" />
-                                            </Button>
-                                            <Button
-                                                className="btn-icon-only rounded-circle ml-1"
-                                                color="primary"
-                                                href="#pablo"
-                                                onClick={e => e.preventDefault()}
-                                            >
-                                                <i className="fa fa-facebook" />
-                                            </Button>
-                                            <Button
-                                                className="btn-icon-only rounded-circle ml-1"
-                                                color="primary"
-                                                href="#pablo"
-                                                onClick={e => e.preventDefault()}
-                                            >
-                                                <i className="fa fa-dribbble" />
-                                            </Button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </Col>
-                            <Col className="mb-5 mb-lg-0" lg="3" md="6">
-                                <div className="px-4">
-                                    <img
-                                        alt="..."
-                                        className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                                        src={require("app/assets/img/icons/common/ann.jpg")}
-                                        style={{ width: "200px" }}
-                                    />
-                                    <div className="pt-4 text-center">
-                                        <h5 className="title">
-                                            <span className="d-block mb-1">Anntonia Porsild</span>
-                                            <small className="h6 text-muted">Chief Marketing Officer</small>
-                                        </h5>
-                                        <div className="mt-3">
-                                            <Button
-                                                className="btn-icon-only rounded-circle"
-                                                color="info"
-                                                href="#pablo"
-                                                onClick={e => e.preventDefault()}
-                                            >
-                                                <i className="fa fa-twitter" />
-                                            </Button>
-                                            <Button
-                                                className="btn-icon-only rounded-circle ml-1"
-                                                color="info"
-                                                href="#pablo"
-                                                onClick={e => e.preventDefault()}
-                                            >
-                                                <i className="fa fa-facebook" />
-                                            </Button>
-                                            <Button
-                                                className="btn-icon-only rounded-circle ml-1"
-                                                color="info"
-                                                href="#pablo"
-                                                onClick={e => e.preventDefault()}
-                                            >
-                                                <i className="fa fa-dribbble" />
-                                            </Button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </Col>
+                            {
+                                team.map(({
+                                    id,
+                                    name,
+                                    people,
+                                    occupationTitle,
+                                }, key) => (
+                                        <Col key={id || key} className="mb-5 mb-lg-0" lg="3" md="6">
+                                            <div className="px-4">
+                                                <img
+                                                    alt="..."
+                                                    className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
+                                                    src={people}
+                                                    style={{ width: "200px" }}
+                                                />
+                                                <div className="pt-4 text-center">
+                                                    <h5 className="title">
+                                                        <span className="d-block mb-1">{name}</span>
+                                                        <small className="h6 text-muted">{occupationTitle}</small>
+                                                    </h5>
+                                                    <div className="mt-3">
+                                                        <Button
+                                                            className="btn-icon-only rounded-circle"
+                                                            color="warning"
+                                                            href="#pablo"
+                                                            onClick={e => e.preventDefault()}
+                                                        >
+                                                            <i className="fa fa-twitter" />
+                                                        </Button>
+                                                        <Button
+                                                            className="btn-icon-only rounded-circle ml-1"
+                                                            color="warning"
+                                                            href="#pablo"
+                                                            onClick={e => e.preventDefault()}
+                                                        >
+                                                            <i className="fa fa-facebook" />
+                                                        </Button>
+                                                        <Button
+                                                            className="btn-icon-only rounded-circle ml-1"
+                                                            color="warning"
+                                                            href="#pablo"
+                                                            onClick={e => e.preventDefault()}
+                                                        >
+                                                            <i className="fa fa-dribbble" />
+                                                        </Button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </Col>
+                                    ))
+                            }
 
-                            <Col className="mb-5 mb-lg-0" lg="3" md="6">
-                                <div className="px-4">
-                                    <img
-                                        alt="..."
-                                        className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                                        src={require("app/assets/img/icons/common/russell.png")}
-                                        style={{ width: "200px" }}
-                                    />
-                                    <div className="pt-4 text-center">
-                                        <h5 className="title">
-                                            <span className="d-block mb-1">Russell Surrel Mkahanana</span>
-                                            <small className="h6 text-muted">Head Of Finance</small>
-                                        </h5>
-                                        <div className="mt-3">
-                                            <Button
-                                                className="btn-icon-only rounded-circle"
-                                                color="success"
-                                                href="#pablo"
-                                                onClick={e => e.preventDefault()}
-                                            >
-                                                <i className="fa fa-twitter" />
-                                            </Button>
-                                            <Button
-                                                className="btn-icon-only rounded-circle ml-1"
-                                                color="success"
-                                                href="#pablo"
-                                                onClick={e => e.preventDefault()}
-                                            >
-                                                <i className="fa fa-facebook" />
-                                            </Button>
-                                            <Button
-                                                className="btn-icon-only rounded-circle ml-1"
-                                                color="success"
-                                                href="#pablo"
-                                                onClick={e => e.preventDefault()}
-                                            >
-                                                <i className="fa fa-dribbble" />
-                                            </Button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </Col>
-
-                            <Col className="my-5 mb-lg-0" lg="3" md="6">
-                                <div className="px-4">
-                                    <img
-                                        alt="..."
-                                        className="rounded-circle img-center img-fluid shadow shadow-lg--hover"
-                                        src={zinny}
-                                        style={{ width: "200px" }}
-                                    />
-                                    <div className="pt-4 text-center">
-                                        <h5 className="title">
-                                            <span className="d-block mb-1">Zinny Olivier</span>
-                                            <small className="h6 text-muted">Product</small>
-                                        </h5>
-                                        <div className="mt-3">
-                                            <Button
-                                                className="btn-icon-only rounded-circle"
-                                                color="success"
-                                                href="#pablo"
-                                                onClick={e => e.preventDefault()}
-                                            >
-                                                <i className="fa fa-twitter" />
-                                            </Button>
-                                            <Button
-                                                className="btn-icon-only rounded-circle ml-1"
-                                                color="success"
-                                                href="#pablo"
-                                                onClick={e => e.preventDefault()}
-                                            >
-                                                <i className="fa fa-facebook" />
-                                            </Button>
-                                            <Button
-                                                className="btn-icon-only rounded-circle ml-1"
-                                                color="success"
-                                                href="#pablo"
-                                                onClick={e => e.preventDefault()}
-                                            >
-                                                <i className="fa fa-dribbble" />
-                                            </Button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </Col>
                         </Row>
                     </Container>
                 </section>

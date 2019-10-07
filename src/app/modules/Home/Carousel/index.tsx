@@ -1,43 +1,44 @@
+import '../index.css';
+
+import pic04 from 'app/assets/img/icons/common/pic04.jpg';
+import pic01 from 'app/assets/img/icons/common/pic1.jpg';
 import * as React from 'react';
-import { Col, Container, Row, UncontrolledCarousel } from "reactstrap";
-import { AWS_PUB_IMAGE, Images } from 'app/assets/config';
-import "../index.css";
+import { Col, Container, Row, UncontrolledCarousel } from 'reactstrap';
+
 const items = [
-  {
-    src: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80',
-    altText: "",
-    caption: "",
-    header: ""
-  },
-  {
-    src: `${AWS_PUB_IMAGE}${Images.MEET}`,
-    altText: "",
-    caption: "",
-    header: ""
-  }
+    {
+        src: `${pic01}`,
+        altText: "",
+        caption: "",
+        header: ""
+    },
+    {
+        src: `${pic04}`,
+        altText: "",
+        caption: "",
+        header: ""
+    }
 ];
 
-interface IProps { };
-
-const Carousel: React.FC<IProps> = () => {
+const Carousel = () => {
     return (
         <section className="section section-shaped">
             <Container className="py-md">
                 <Row className="justify-content-between align-items-center">
                     <Col className="mb-4 mb-lg-0" lg="5">
                         <h1 className="font-weight-light">
-                          Unique Experience Just for you
+                            Great Views
                         </h1>
                         <p className="lead mt-4">
                             <i className="icons-carousel ni ni-check-bold mr-3" />
-                            Choose your favorite Cuisines 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             <div style={{ paddingTop: '13px' }} />
                             <i className="icons-carousel ni ni-check-bold mr-3" />
-                            We'll list out restaurants based on your
-                            favorite food interest,
+                            Amet consectetur adipisicing elit. Iusto, dolorum!
+                           favorite food interest,
                             <div style={{ paddingTop: '13px' }} />
                             <i className="icons-carousel ni ni-check-bold mr-3" />
-                            Get ready to meet with people who have the same food interest as you.
+                            Lorem consectetur adipisicing elit. Iusto, dolorum.
                 </p>
                     </Col>
                     <Col className="mb-lg-auto" lg="6">

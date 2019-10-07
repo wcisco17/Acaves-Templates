@@ -1,5 +1,5 @@
 export default {
-    primaryPink: '#FF54A6',
+    primaryPink: '#5C87FF',
     primaryYellow: '#FFF500',
     backgroundHome: '#FBFBFB',
     primaryGreen: '#0FD9A3',

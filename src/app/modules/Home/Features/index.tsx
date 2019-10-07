@@ -16,7 +16,7 @@ const Features: React.FC<IProps> = ({ messagesEndRef }) => {
                     <Row className="row-grid align-items-center">
                         <Bounce left>
                             <h1 style={{ color: '#172b4d' }} className="mb-3 display-3 featured-header">
-                                The TungTied Experience{" "}
+                                The Acave Mobile Experience {" "}
                             </h1>
                         </Bounce>
                         <HomeTabs />
