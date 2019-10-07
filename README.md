@@ -23,7 +23,7 @@
 
 <p align="center">
   <strong>
-    Available at www.websitecomingsoon.com
+    Available at https://romantic-edison-b62585.netlify.com/
   </strong>
 </p>
 
