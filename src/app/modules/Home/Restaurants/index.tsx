@@ -1,8 +1,7 @@
+import uri from 'app/assets/img/icons/common/resto-owner.jpg';
 import React from 'react';
-import { Card, CardBody, Col, Container, Row } from 'reactstrap';
 import { Link } from 'react-router-dom';
-
-const uri = 'https://images.unsplash.com/photo-1519288997835-7ae47de1b588?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80';
+import { Card, CardBody, Col, Container, Row } from 'reactstrap';
 
 const Restaurants = () => {
     return (
@@ -25,7 +24,7 @@ const Restaurants = () => {
                         <Col className="order-lg-1" lg="6">
                             <div className="d-flex px-3">
                                 <div className="pl-4">
-                                    <h4 className="display-3 text-white">Are you a Restaurant owner?</h4>
+                                    <h4 className="display-3 text-white">Lorem ipsum dolor sit amet consectetur ?</h4>
                                     <p className="text-white">
                                         Focus on your craft, let us worry about the customers. We work with selected restaurants in ways to monitize their platform, an end to end customer suppport that is constantly for their needs.
                                 <br />

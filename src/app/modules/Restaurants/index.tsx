@@ -1,21 +1,33 @@
-import chef from 'app/assets/img/icons/common/chef-cut.png';
+import './index.css';
+
+import homeOwnerImg from 'app/assets/img/icons/common/pic03.jpg';
 import themes from 'app/assets/themes';
 import Footer from 'app/components/Footer';
+import { useGlobalState } from 'app/store';
+import { increment } from 'app/store/counter';
 import * as React from 'react';
-import TextLoop from "react-text-loop";
+import TextLoop from 'react-text-loop';
 import { Badge, Button, Card, CardBody, Col, Container, Row } from 'reactstrap';
+
 import Content from './Content';
 import ExampleDashboard from './ExampleDashboard';
-import './index.css';
+
 interface IProps { };
 
 const Restaurant: React.FC<IProps> = () => {
+    const [counter] = useGlobalState('counter');
+
+    React.useEffect(() => {
+        document.title = `Acave | Template ${counter > 0 ? counter : ''}`
+        return () => { };
+    }, [counter]);
+
     return (
         <>
             <div className="position-relative">
                 <section className="section restaurant section-lg section-hero section-shaped">
                     <div className="shape shape-style-1" style={{
-                        background: `url(${chef})`,
+                        background: `url(${homeOwnerImg})`,
                         backgroundSize: 'cover',
                         backgroundPosition: 'center'
                     }} >
@@ -39,8 +51,8 @@ const Restaurant: React.FC<IProps> = () => {
                                     <p style={{
                                     }} className="h1 rest-header text-white">
                                         <strong>
-                                            For restaurants
-                                    </strong>
+                                            For home owners{" "}
+                                        </strong>
                                     </p>
                                     <p style={{
                                         position: 'absolute',
@@ -48,24 +60,28 @@ const Restaurant: React.FC<IProps> = () => {
                                     }} className="lead rest-customer text-white">
                                         Let us worry about your {" "}
                                         <TextLoop interval={1000} >{" "}
-                                            <span style={{ fontWeight: "bold" }} >Customers</span>
+                                            <span style={{ fontWeight: "bold" }} >Your Brand</span>
                                             <span style={{ fontWeight: "bold" }} >Marketing</span>
-                                            <span style={{ fontWeight: "bold" }} >Loyalty Programs</span>
+                                            <span style={{ fontWeight: "bold" }} >Loyalty</span>
                                             <span style={{ fontWeight: "bold" }} >Social Presence</span>
                                         </TextLoop>
                                     </p>
-                                    <div className="my-5 content-button">
+                                    <div style={{
+                                        alignContent: 'center',
+                                        display: 'flex'
+                                    }} className="my-5 content-button">
                                         <Button
-                                            onClick={() => 'scrollToBottom()'}
+                                            onClick={() => increment()}
                                             style={{
                                                 backgroundColor: themes.primaryPink,
                                                 color: themes.white,
                                                 border: 'none'
                                             }} >
                                             <span className="nav-link-inner--text ml-1">
-                                                Sign Up
+                                                We've helped (Click Me!)
                                         </span>
                                         </Button>
+                                        <p className="h4 text-white">{counter} number of people</p>
                                     </div>
                                 </div>
                             </Col>
@@ -105,10 +121,10 @@ const Restaurant: React.FC<IProps> = () => {
                                                 <i className="ni ni-istanbul" />
                                             </div>
                                             <h6 className="text-success text-uppercase">
-                                            scalable business
+                                                scalable business
                                         </h6>
                                             <p className="description mt-3">
-                                                TungTied can help your business scale and target that specific audience your looking
+                                                Acave can help your business scale and target that specific audience your looking
                                                 for.
                           </p>
                                             <div>
@@ -125,6 +141,7 @@ const Restaurant: React.FC<IProps> = () => {
                                         </CardBody>
                                     </Card>
                                 </Col>
+
                                 <Col lg="4">
                                     <Card className="card-lift--hover shadow border-0">
                                         <CardBody className="py-5">

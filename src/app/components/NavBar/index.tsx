@@ -1,9 +1,21 @@
+import logo from 'app/assets/img/icons/common/logo.png';
 import themes from 'app/assets/themes';
-import Headroom from "headroom.js";
+import Headroom from 'headroom.js';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Button, Col, Container, Nav, Navbar, NavbarBrand, NavItem, NavLink, Row, UncontrolledCollapse, UncontrolledTooltip } from "reactstrap";
-import logo from 'app/assets/img/icons/common/tung.png';
+import {
+    Button,
+    Col,
+    Container,
+    Nav,
+    Navbar,
+    NavbarBrand,
+    NavItem,
+    NavLink,
+    Row,
+    UncontrolledCollapse,
+    UncontrolledTooltip,
+} from 'reactstrap';
 
 interface IPropsNavigation { };
 
@@ -73,7 +85,7 @@ class Navigation extends React.Component<IPropsNavigation> {
                                                 border: 'none'
                                             }} >
                                             <span className="nav-link-inner--text ml-1">
-                                                For Restaurants
+                                                For Home owners
                                         </span>
                                         </Button>
                                     </Link>

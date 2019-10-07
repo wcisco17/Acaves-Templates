@@ -1,7 +1,7 @@
-import { AWS_PUB_IMAGE, Images } from 'app/assets/config';
-import classnames from "classnames";
+import { Tabs } from 'app/assets/config';
+import classnames from 'classnames';
 import React from 'react';
-import { Card, CardBody, Col, Nav, NavItem, NavLink, TabContent, TabPane } from "reactstrap";
+import { Card, CardBody, Col, Nav, NavItem, NavLink, TabContent, TabPane } from 'reactstrap';
 
 const HomeTabs = () => {
     const [tabs, setTabs] = React.useState<number>(1);
@@ -31,7 +31,7 @@ const HomeTabs = () => {
                             role="tab"
                         >
                             <i className="ni ni-active-40 mr-2" />
-                            Pick your favorite cuisines
+                            Lorem ipsum dolor sit amet consectetur.
             </NavLink>
                     </NavItem>
                     <NavItem>
@@ -45,7 +45,7 @@ const HomeTabs = () => {
                             role="tab"
                         >
                             <i className="ni ni-bell-55 mr-2" />
-                            Choose your  favorite Restaurants
+                            Lorem ipsum dolor sit amet consectetur.
             </NavLink>
                     </NavItem>
                     <NavItem>
@@ -59,7 +59,7 @@ const HomeTabs = () => {
                             role="tab"
                         >
                             <i className="ni ni-calendar-grid-58 mr-2" />
-                            Schedule a meet up
+                            Lorem ipsum dolor sit amet consectetur.
             </NavLink>
                     </NavItem>
                 </Nav>
@@ -67,83 +67,32 @@ const HomeTabs = () => {
             <Card className="shadow">
                 <CardBody >
                     <TabContent activeTab={"tabs" + tabs}>
-
-                        <TabPane tabId="tabs1">
-                            <div className="home__container-1 d-flex mx-5 ">
-                                <Col className="order-md-1" md="6">
-                                    <img
-                                        alt="..."
-                                        className="img-fluid floating featured-iphone"
-                                        style={{
-                                            width: '50%',
-                                        }}
-                                        src={`${AWS_PUB_IMAGE}${Images.IPHONE}`}
-                                    />
-                                </Col>
-                                <Col className="d-flex align-items-center order-md-3" md="6">
-                                    <div className="pr-md-5">
-                                        <p className="h5 mb-3">Choose your favorite type of cuisines</p>
-                                        <p className='mission' >
-                                            TungTied's mission is not only about food, our aim is to uplift communties by using food as the ice breaker,
-                                             fight the gap for inequality in Asia, reduce polution, and create an open minded space
-                                            for everyone regardless of gender affiliation or color.
-                                </p>
+                        {
+                            Tabs.map((tab, key) => (
+                                <TabPane key={key || tab.id} tabId={`tabs${tab.id}`}>
+                                    <div className="home__container-1 d-flex mx-5 ">
+                                        <Col className="order-md-1" md="6">
+                                            <img
+                                                alt="..."
+                                                className="img-fluid floating featured-iphone"
+                                                style={{
+                                                    width: '50%',
+                                                }}
+                                                src={`${tab.image}`}
+                                            />
+                                        </Col>
+                                        <Col className="d-flex align-items-center order-md-3" md="6">
+                                            <div className="pr-md-5">
+                                                <p className="h5 mb-3">{tab.title}</p>
+                                                <p className='mission' >
+                                                    {tab.text}
+                                                </p>
+                                            </div>
+                                        </Col>
                                     </div>
-                                </Col>
-                            </div>
-                        </TabPane>
-
-
-                        <TabPane tabId="tabs2">
-                            <div className="home__container-1 d-flex mx-5 ">
-                                <Col className="order-md-1" md="6">
-                                    <img
-                                        alt="..."
-                                        className="img-fluid floating featured-iphone"
-                                        style={{
-                                            width: '50%',
-                                        }}
-                                        src={`${AWS_PUB_IMAGE}${Images.IPHONE}`}
-                                    />
-                                </Col>
-                                <Col className="d-flex align-items-center order-md-3" md="6">
-                                    <div className="pr-md-5">
-                                        <p className="h5 mb-3">Pick your favorite Restaurants</p>
-                                        <p className='mission' >
-                                            TungTied's mission is not only about food, our aim is to uplift communties by using food as the ice breaker,
-                                             fight the gap for inequality in Asia, reduce polution, and create an open minded space
-                                            for everyone regardless of gender affiliation or color.
-                                </p>
-                                    </div>
-                                </Col>
-                            </div>
-                        </TabPane>
-
-                        <TabPane tabId="tabs3">
-                            <div className="home__container-1 d-flex mx-5 ">
-                                <Col className="order-md-1" md="6">
-                                    <img
-                                        alt="..."
-                                        className="img-fluid floating featured-iphone"
-                                        style={{
-                                            width: '50%',
-                                        }}
-                                        src={`${AWS_PUB_IMAGE}${Images.IPHONE}`}
-                                    />
-                                </Col>
-                                <Col className="d-flex align-items-center order-md-3" md="6">
-                                    <div className="pr-md-5">
-                                        <p className="h5 mb-3">Meet with people</p>
-                                        <p className='mission missions' >
-                                            TungTied's mission is not only about food, our aim is to uplift communties by using food as the ice breaker,
-                                             fight the gap for inequality in Asia, reduce polution, and create an open minded space
-                                            for everyone regardless of gender affiliation or color.
-                                </p>
-                                    </div>
-                                </Col>
-                            </div>
-                        </TabPane>
-
+                                </TabPane>
+                            ))
+                        }
                     </TabContent>
                 </CardBody>
             </Card>
