@@ -52,7 +52,7 @@
   - Hosted on Netlify.
   - React on the FrontEnd.
   - CSS for styles.
-  - Global State - React-hooks-global-state.
+  - Global State with React-hooks-global-state
 
 ## Comments
 <p>
